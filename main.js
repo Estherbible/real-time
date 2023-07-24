@@ -1,5 +1,8 @@
-function preload() {
+noseX=0
+noseY=0
 
+function preload() {
+sunglasses=loadImage("sunglasses1.png")
 }
 function setup() {
     canvas = createCanvas(300, 300)
@@ -14,6 +17,7 @@ function setup() {
 
 function draw() {
 image(video, 0,0, 300, 300)
+image(sunglasses, noseX-40, noseY-15, 80,20)
 }
 
 function takeSnapShot() {
